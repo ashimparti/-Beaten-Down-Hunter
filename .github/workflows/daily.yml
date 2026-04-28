@@ -2,7 +2,8 @@ name: Beaten-Down Hunter Scan
 
 on:
   schedule:
-    - cron: '0 13 * * 1-5'
+    # 20:30 UTC = 12:30 AM Dubai (just after US close — fresh EOD data)
+    - cron: '30 20 * * 1-5'
   workflow_dispatch:
 
 jobs:
